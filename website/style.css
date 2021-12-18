@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/ThinkstockPhotos-627889942-690px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    color: #fffff8;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.holder{
+
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+    width: 500px;
+    height:350px;
+    padding: 15px;
+}
+
+#entryHolder{
+
+}
+
+#date{
+
+}
+
+#temp{
+
+}
+
+#content{
+
+}
+
+.headline {
+    font-size: 28px;
+}
+.title{
+    font-size: 24px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 50px;
+    width: 320px;
+    background:#045FA8;
+    color: #eee;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border:none;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+button{
+    width: 150px;
+    height: 80px;
+    background: #02325a;
+    color: #eee;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    margin-top: 30px;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    display: block;
+    background: #045FA8;
+    color: #eee;
+    font-size: 20px;
+    height: 100px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #eee; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #eee; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #eee; 
+    font-family: 'Oswald', sans-serif;
+} 
+#city{
+    font-size: 30px;
+    color: #02325a;
+}
+#empty{
+    background-color: #EEE;
+    width: 200px;
+    margin-left: 70px;
+    border-radius: 20px;
+    color: #f73434;
+    position:relative;
+    animation-name: example;
+    animation-duration: 0.5s;
+    z-index:-1;
+}
+.show{
+    display:none;
+}
+@keyframes example {
+    from{top:-30px}
+    to{top:0px}
+}
